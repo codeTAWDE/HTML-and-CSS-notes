@@ -1,4 +1,4 @@
-# tawde-demo
-This is my first Github Repository.
+# HTML-and-CSS-notes
+HTML and CSS notes are present in this repository.
 <br>
 Author - Atharva Mohan Tawde

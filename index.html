@@ -1,1 +1,217 @@
-<p>Hello World!</p>
+  <!-- (Press 'Ctrl+/' to write comments which will be not shown on browser. This is used for the viewers for getting information about the code..) -->
+
+  <!-- Press 'Shift+1(!)' to get Boiler plate of HTML 5..; press tab to select. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning 5th version of HTML</title>
+</HEAD>
+<body>
+
+
+    Hello World!
+
+
+    <h1>Largest</h1>
+    <h2>Large</h2>
+    <h3>Big</h3>
+    <h4>Medium</h4>
+    <h5>Small</h5>
+    <h6>Smallest</h6>
+
+
+    <p>Sample paragraph - "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, accusamus porro?" </p>
+      <!-- 'lorem' means just random words; write lorem10 to get 10 words and lorem*10 to get 10 random lines.. -->
+
+
+      <!-- To remove horizontal scroll and wanna see the full code at one glance; go to bottom left settings, open Command Pallete and search and turn on 'Toggle Word Wrap' OR press 'Alt+Z' -->
+      <!--Shortcut for opening Command Pallete- 'Ctrl+Shift+P'  -->
+
+
+    <a href="https://www.google.com" target="_self">Visit Google</a>
+    <br>
+    <a href="https://github.com/codeTAWDE" target="_blank">My GitHub Profile</a>
+    <br>
+    <a href="/hello.html">Another File</a>
+      <!-- br tag is for making a line break; target _self opens the link in the same tab, while target="_blank or _main" opens it in a new tab, recommended to use _blank or _main -->
+      <!-- If file is in another folder then in href- write "/foldername/filename.html" -->
+    <br>
+
+    <img src="https://tiimg.tistatic.com/fp/3/008/030/glossy-cover-and-rectangular-plain-paper-writing-spiral-binding-notebook-for-office-use-183.jpg" alt="Notebook image"/>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Spider-Man" target="_main"><img src="/spidermanIMG.jpeg" alt="Spiderman image" height="200" width="400"/></a>
+      <!-- First save image in your main folder. 'alt' is used for showing the text when image is not loaded; it is also used for SEO and accessibility purposes. Anchor tag is used for clickable images -->
+
+
+    <hr> 
+    <p> <b>Bold Text</b> <i>Italic Text</i> <u>Underline Text</u> <big>Big Text</big> <small>Small Text</small> <strong>Strong Text</strong> <s>Strikethrough Text</s> <sup>2</sup> <sub>2</sub> </p>
+    <pre>Preformatted        Text</pre>
+      <!-- 'pre' tag ignores whitespace and line breaks -->
+    <hr>
+
+    
+      <!-- Semantic Tags- header, main, footer -->
+    <header>
+        <pre><h1>Experiences             Projects</h1></pre>
+    </header>
+
+    <main>
+    <section>Education:- Comupter Enginerring student</section>
+    <article>My story....</article>
+    <aside>This is an Advertisement..</aside>
+    </main>
+
+    <footer>
+    <h5>Contact- _NOT_TAWDE</h5>
+    </footer>
+    <hr>
+
+
+      <!-- Non-semantic Tags- div, span -->
+
+    <div>
+      <p>hello world</p>
+      <p>namaste</p>
+      <p>hi</p>
+    </div>
+    <div>
+      <p>bye</p>
+      <p>goodbye</p>
+      <p>ciao</p>
+    </div>
+      <!-- Div tag (container) and many other tags take full width. -->
+      <hr>
+    <span>sayonara (does not take full width)</span>
+      <!-- Span tag (also a container) is a Inline element and takes width as per size. There are also more such tags which take minimum width. -->
+
+    <hr>
+      <!-- Lists: -->
+    <ul>
+      <li>Apple</li>
+      <ul>
+        <li>Color- Red</li>
+        <li>Season- Winter</li>
+      </ul>
+      <li>Mango</li>
+      <ul>
+        <li>Color- Yellow</li>
+        <li>Season- Summer</li>
+      </ul>
+      <li>Lychee</li>
+      <ul>
+        <li>Color- Hot pink</li>
+        <li>Season- Monsoon</li>
+      </ul>
+    </ul>
+
+    <ol>
+      <li>Apple</li>
+      <ol type="i">
+        <li>Color- Red</li>
+        <li>Season- Winter</li>
+      </ol>
+      <li>Mango</li>
+      <ol type="a">
+        <li>Color- Yellow</li>
+        <li>Season- Summer</li>
+      </ol>
+      <li>Lychee</li>
+      <ol start="6">
+        <li>Color- Hot pink</li>
+        <li>Season- Monsoon</li>
+      </ol>
+    </ol>
+      <!-- 'type' for changing styles:  
+      a for lowercase letters
+      A for uppercase letters
+      i for lowercase Roman numerals
+      I for uppercase Roman numerals
+      1 for numbers (default)
+
+      and 'start' for setting the starting number -->
+    <hr>
+
+  
+    <!-- Tables -->
+    <table>
+      <thead>
+      <caption>Student Data:</caption>
+      <tr>
+        <th colspan="1">Name</th>
+        <th colspan="1">Roll No.</th>
+        <!-- colspan="1" means the cell spans 1 column -->
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Atharva Tawde</td>
+        <td>25857</td>
+      </tr>
+      <tr>
+        <td>Anonymous</td>
+        <td>258XX</td>
+      </tr>
+      </tbody>
+    </table>
+    <hr>
+
+
+      <!-- HTML Forms -->
+    <form action="/action.php">
+      <input type="text" placeholder="Username" required>
+      <br>
+      <input type="password" placeholder="Password" required>
+      <br>
+      <input type="email" placeholder="Email" required>
+    <br>
+   
+      <label for="101">
+      <input type="radio" value="class XI" name="class" id="101"> class XI
+      </label>
+      <label for="102">
+      <input type="radio" value="class XII" name="class" id="102"> class XII
+      </label>
+      <!-- Label aur id dalne se aap text pe bhi click karke option select kar sakte hai.. -->
+      <br>
+      <label for="Computer Science">
+      <input type="checkbox" value="computer_science" name="subject" id="Computer Science"> Computer Science
+      </label>
+      <label for="Electronics">
+      <input type="checkbox" value="electronics" name="subject" id="Electronics"> Electronics
+      </label>
+   
+    <br>
+    
+      <select name="city">
+        <option value="Mumbai">Mumbai</option>
+        <option value="Navi Mumbai">Navi Mumbai</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Delhi">Delhi</option>
+      </select>
+   
+    <br>
+    
+      <textarea name="feedback" id="101" placeholder="Please give your valuable feedback here" rows="5" cols="25">Feedback...</textarea> 
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+    <hr>
+    
+      <!-- Website inside Website -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yRpLlJmRo2w?si=ap_FTF-gGg-F0_Ej" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com" title="Google"></iframe>
+      <!-- Google prevents this. -->
+    <iframe width="550" height="300" src="https://www.wikipedia.org" title="Wikipedia"></iframe>
+      <!-- Wikipedia allows this. -->
+    <hr>
+
+      <!-- Videos -->
+    <video src="/WhatsApp Video 2026-06-01 at 11.40.16.mp4" width="550" height="830" controls loop>Java</video>   
+
+
+</body>
+</html lang="en">
