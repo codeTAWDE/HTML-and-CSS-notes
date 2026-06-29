@@ -1,3 +1,649 @@
-p {
+  /* CSS can be applied in three ways: Inline, Internal, External,  External is the best to use..  */
+ /* Basic CSS syntax contains 3 things:-   'selector',  'property'  and  'value'  */
+
+
+ /* Selectors in CSS: 
+ First is the 'Element' selector-  */
+h3 {
     color: red;
 }
+/* Here;  h3 is 'selector', color is 'property', red is 'value' 
+
+ Second is the 'ID' selector-  */
+#paragraph1 {
+    color: green;
+}
+#paragraph2 {
+    color: blue;
+}
+ /* Note; write the exact name of ID which is written in HTML file with a # in the beginning  */
+
+ /* Third is the 'Class' selector-  */
+.highlight {
+    color: orange;
+}
+ /* In HTML file, we can assign the same class name to multiple elements and then we can style all those elements together using that class name in CSS file.  */
+
+ /* Fourth is the 'Universal' selector-  */
+* {
+    font-family: "Times New Roman";
+    
+    padding: 0;
+    margin: 0;
+    /* Most of the Front-end developers do this befoe starting any project..  */
+
+}
+ /* The universal selector (*) selects all elements in the HTML document.  */
+
+
+
+ /* Three CSS color systems:  
+ 1. R.G.B. system:  */
+body {
+    background-color: grey;
+    /* The value of red is highest and green and blue are 0  */
+}
+
+ /* 2. Hexadecimal system:- '#'   Example: #ff0000 is red, #00ff00 is green, "(Now tell me the H.E.X. code value for blue?)" 
+
+ 3. HSL system:- Hue, Saturation, Lightness. Example: hsl(0, 100%, 50%) is red, hsl(120, 100%, 50%) is green, hsl(240, 100%, 50%) is blue. 
+
+ Search 'Color Picker' on Goggle. You can refer to the notes in the Git-hub folder to understand the color systems better..  */
+
+
+
+#id1 {
+    text-align: center;
+ /* Text Alignment property: left, right, center, justify, start, end  */
+
+    text-decoration: red wavy line-through;
+ /* Text Decoration uses: underline, overline, line-through, etc....   */
+
+    font-family: Arial, Helvetica, sans-serif;
+    /* Arial is a font-style but you can write multiple families(styles) incase Arial doesn't work on a browser, the next style will be applied; Note that the first one is given the first priority.  */
+}
+
+a {
+    text-decoration: none;
+}
+ /* Any doubt till here or further, can refer to 'M.D.N.' website..  */
+
+#h1 {
+    font-weight: normal;
+}
+#h2 {
+    font-weight: bold;
+}
+#h3 {
+    font-weight: 900;
+}
+#h4 {
+    font-weight: lighter;
+}
+ /* Range: 100 to 900 (Headings are by default bold-400)  */
+
+
+#p1 {
+    font-size: 25px;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+
+
+ /* Box Model in C.S.S.  */
+#box_model {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border-width: 10px;
+    border-style: solid;
+    border-color: blue;
+     /* Border-'Shorthand'(Shortcut)-  border: 10px   solid  black;  */
+                                            /* width  style  color                     */
+    
+    border-radius: 10px; 
+     /* Trick- If width and height of a box are same and if set the radius to '50%', then we will get a perfect CIRCLE  */
+
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+     /* Shortcut- padding: 1px   2px   3px    4px;   ( Clock-wise )   */
+                        /* top  right bottom  left                   */
+
+    margin: 100px;
+     /* Same as padding  */
+    
+}
+
+
+
+
+ #Q1 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+
+.Q2 {
+    height: 60px;
+    max-width: 1800px;
+    background-color: #0f1111;
+    color: white;
+    border: 5px solid white;
+    padding-top: 4px;
+}
+
+#Qa a {
+    color: #f08804;
+    margin: 0px 200px 0px 0px;
+    font-size: 25px;
+    text-decoration: none;
+}
+#Qb a {
+    color: white;
+    margin: 0px 200px 0px 0px;
+    
+}
+
+#Qc a {
+    color: white;
+    margin: 0px 200px 0px 0px;
+    text-decoration: none;
+}
+#Qd a {
+    color: white;
+    margin: 0px 200px 0px 0px;
+    text-decoration: none;
+}
+#Qf {
+    color: white;
+    background-color: orange;
+}
+
+
+
+
+#Q3 {
+    height: 220px;
+    width: 80px;
+    background-color: grey;
+    margin: 700px;
+    border: 15px ridge black;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.693);
+}
+
+#red {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(red, rgb(243, 191, 96));
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 13px;
+}
+#yellow {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 13px;
+    background: linear-gradient(yellow, rgba(255, 166, 0, 0.664));
+}
+#green {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient( yellow, lime);
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 13px;
+} 
+
+
+
+
+ /* Display Property in CSS  */
+#display_property {
+    background-color: pink;
+    display: inline;
+    
+}
+
+#button {
+    display: block;
+}
+
+
+
+#box1 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+}
+#box2 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 25px;
+    padding: 25px;
+    display: none;
+    visibility: hidden; 
+    /* Use-  visibility: hidden;  (but here the space is reserved )  */
+    
+}
+#box3 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+}
+ /* See notes photos for better understanding..  :)  */
+
+
+
+ /* Alpha Channel  
+ (Opacity is 0 to 1 ) 'R.G.B.'A''  */
+#rgba {
+    height: 100px;
+    width: 100px;
+
+    background-color: rgba(255, 0, 0, 0.5);
+
+}
+
+
+
+
+ .Q1 {
+    height: 60px;
+    max-width: 1800px;
+    background-color: #0f1111;
+    color: white;
+    border: 5px solid white;
+    padding-top: 4px;
+}
+
+#Qa a {
+    color: #f08804;
+    margin: 0px 200px 0px 0px;
+    font-size: 25px;
+    text-decoration: none;
+}
+#Qb a {
+    color: white;
+    margin: 0px 200px 0px 0px;
+    
+}
+
+#Qc a {
+    color: white;
+    margin: 0px 200px 0px 0px;
+    text-decoration: none;
+}
+#Qd a {
+    color: white;
+    margin: 0px 200px 0px 0px;
+    text-decoration: none;
+}
+#Qf {
+    color: white;
+    background-color: orange;
+}
+
+
+main{
+    height: 539px;
+    margin: 50px;
+    background-color: royalblue;
+}
+main div {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#content1 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#content2 {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+#content3 {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+} 
+
+
+
+
+     /* Relative units: 
+     1- Percentage %  unit  */
+    #percent1 {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+    }
+    #percent2 {
+        height: 50px;
+        width: 30%;
+
+         /* 30% of width 100px is 30px  */
+
+        background-color: yellow;
+        margin-left: 10%;
+    }
+
+     /* em unit  */
+    #em1 {
+        height: 100px;
+        width: 200px;
+        background-color: green;
+        font-size: 10px;
+    }
+    #em2 {
+        height: 50px;
+    
+        background-color: yellow;
+        margin-left: 10%;
+        font-size: 2em;
+         /* 2em means two times of parent's font-size i.e. 20px  */
+
+        width: 5em;
+         /* Here 5em means 10px*2em*5em = 100px  */
+    }
+
+     /* rem unit  */
+    #rem1 {
+        height: 100px;
+        width: 200px;
+        background-color: green;
+        font-size: 10px;
+    }
+    #rem2 {
+        height: 50px;
+       
+        background-color: yellow;
+        margin-left: 10%;
+        font-size: 2rem;
+         /* 2rem means two times of default html tag size which is 16px; so font-size will be = 32px  */
+
+        width: 5rem;
+        /* Here 5rem means 16*5= 80px   */
+    }
+
+     /* More relative units are  vh  and  vw   
+     vh- relative to 1% viewport height 
+    vw- relative to 1% viewport width 
+
+    If height: 100vh; then it willcover 100% height of the web page, it doen't change even when you change the size of the screen; Similar for width.. (you can try this unit in the above CSS code of rem..)  */
+
+ 
+
+    
+     /* POSITIONS */
+
+    
+    div {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        display: inline-block;
+    }
+
+
+    #box1 {
+        background-image: url("cat_photo.jpg");
+        background-size: contain;
+        /* Best is to use 'cover' */
+        background-repeat: no-repeat;
+
+    }    
+    
+
+
+
+    /* Flex Box */
+
+    body {
+        text-align: center;
+    }
+
+    div {
+        height: 100px;
+        width: 50px;
+        display: inline-block;
+        border: 2px solid black;
+    }
+    #container {
+        width: 800px;
+        height: 300px;
+
+        display: flex;
+        /* Compualsory to use this for using any flex-box properties.. */
+
+        flex-direction: row;
+
+        justify-content: center;
+
+        flex-wrap: wrap; 
+        align-items: flex-start;
+
+        align-content: flex-start; 
+
+    }
+
+    #box1 {
+        background-color: aqua;
+
+        flex-grow: 1;
+    }
+
+    #box2 {
+        background-color: pink;
+        height: 200px;
+
+        flex-grow: 2;
+
+        
+    }
+
+    #box3 {
+        background-color: darkkhaki;
+        height: 75px;
+    }
+
+    #box4 {
+        background-color: indianred;
+    }
+
+    #box5 {
+        background-color: slateblue;
+
+        
+    }
+
+
+    /* Media Querries */
+
+    div {
+        height: 167px;
+        width: 167px;
+        
+    }
+
+    @media (max-width : 300px) {
+        div {
+            background-color: green;
+        }
+    }
+
+    @media (min-width: 300px) and (max-width: 400px) {
+        div {
+            background-color: pink;
+        }
+    }
+
+    @media (min-width: 400px) and (max-width: 600px) {
+        div {
+            background-color: red;
+        }
+    }
+
+    @media (min-width: 600px) {
+        div {
+            background-color: blue;
+        }
+    }
+
+
+
+
+    Transitions in CSS
+    div {
+        height: 100px;
+        width: 100px;
+        background-color: aquamarine;
+        border: 2px solid black;
+
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in;
+        transition-delay: 2s;
+
+        transition: all 2s ease-in 2s; 
+
+        position: absolute;
+        top: 200px;
+        left: 200px;
+
+        transition: all 1s ease-in 10ms;
+
+        transform: rotate(45deg);
+        rotate: x 180deg;
+
+        transform: scale(1, 2);
+        /* First is X and second is Y-axis */
+
+
+    }
+
+    div:hover {
+        background-color: red;
+        color: white;
+        font-size: 20px;
+
+        rotate: 90deg;
+        transform: scaleY(2);
+        transform: translateY(1000px);
+        transform: skew(180deg);
+        scale: 2;
+        transform: scale(2, 3) rotate(2, 3);
+    }
+
+    div:active {
+        background-color: white;
+        border: none;
+
+        rotate: 180deg;
+        transform: scale(2, 3);
+        
+    }
+    
+
+    ANIMATIONS
+
+    div {
+        height: 100px;
+        width: 100px;
+        background-color: aquamarine;
+        border: 2px solid black;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+
+        animation: colorAnimation 4s ease-in 1s infinite normal;
+
+    }
+
+    
+    @keyframes colorAnimation {
+        0% {
+            left: 0px;
+            background-color: yellow; 
+        }
+
+        50% {
+            background-color: blue;
+        }
+
+        100% {
+            left: 200px;
+        background-color: red;
+        color: white;
+        }
+    }
+        
+
+        /* Loader Animation */
+
+        .loader {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            border: 20px solid #FFE66D;
+            border-top: 20px solid #4ECDC4;
+            
+            
+
+            animation: loaderAnimation 3s ease-in-out 1s infinite normal;
+            
+        }
+
+        @keyframes loaderAnimation {
+                from {
+                    transform: rotate(0deg);
+                }
+                
+                to {
+                    transform: rotate(360deg);
+                }
+        }
+
+        .loader img {
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-size: cover;
+            animation: imgNOrotate 3s ease-in-out 1s infinite normal;
+        }
+
+        @keyframes imgNOrotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+        
+        /*                                END     Arigato!                                           */
+
+
+
+
+
+    
+
